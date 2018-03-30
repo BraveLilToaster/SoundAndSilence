@@ -5,6 +5,7 @@ import PostListing from '../components/Posts/PostListing/PostListing'
 import SEO from '../components/Accessories/SEO/SEO'
 import config from '../../data/SiteConfig'
 import TopNavigation from '../components/Layout/Navigation/Navigation'
+import HeroCarousel from '../components/Accessories/HeroCarousel'
 
 class Index extends React.Component {
   render() {
@@ -14,6 +15,7 @@ class Index extends React.Component {
         <Helmet title={config.siteTitle} />
         <SEO postEdges={postEdges} />
         <TopNavigation pages={this.props.data.allWordpressPage} />
+        <HeroCarousel featuredPosts={postEdges}/>
         <MainContentContainer>
           <PostListing postEdges={postEdges} />
         </MainContentContainer>
