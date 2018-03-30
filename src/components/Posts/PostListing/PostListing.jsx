@@ -57,6 +57,7 @@ class PostListing extends React.Component {
 
 const PostListContainer = styled.div`
   margin: 50px 0;
+
   h3 {
     position: relative;
   }

@@ -43,6 +43,7 @@ class TopNavigation extends Component {
 const NavigationContainer = styled.div`
   display: flex;
   position: fixed;
+  z-index: 499;
   top: 0;
   justify-content: space-between;
   align-items: center;

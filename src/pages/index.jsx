@@ -15,7 +15,6 @@ class Index extends React.Component {
         <SEO postEdges={postEdges} />
         <TopNavigation pages={this.props.data.allWordpressPage} />
         <MainContentContainer>
-          <Divider />
           <PostListing postEdges={postEdges} />
         </MainContentContainer>
       </HomeContainer>
@@ -26,11 +25,6 @@ class Index extends React.Component {
 export default Index
 
 const HomeContainer = styled.div``
-
-const Divider = styled.div`
-  margin: 50px 0;
-  border-bottom: 1px solid darkgray;
-`
 
 const MainContentContainer = styled.main`
   max-width: 37.5rem;
